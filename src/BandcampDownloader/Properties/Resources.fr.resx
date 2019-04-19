@@ -438,4 +438,10 @@ de leurs albums.</value>
   <data name="windowSettings_Title" xml:space="preserve">
     <value>Paramètres</value>
   </data>
+  <data name="TagRemoveAction_DoNotModify" xml:space="preserve">
+    <value>Ne pas modifier</value>
+  </data>
+  <data name="TagRemoveAction_Empty" xml:space="preserve">
+    <value>Vider le tag</value>
+  </data>
 </root>

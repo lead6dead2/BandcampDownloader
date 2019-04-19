@@ -28,7 +28,7 @@ namespace BandcampDownloader {
             comboBoxAlbumArtist.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
             comboBoxAlbumTitle.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
             comboBoxArtist.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
-            comboBoxComments.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
+            comboBoxComments.GetBindingExpression(ComboBox.SelectedItemProperty).UpdateSource();
             comboBoxLyrics.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
             comboBoxTrackNumber.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();
             comboBoxTrackTitle.GetBindingExpression(ComboBox.SelectedValueProperty).UpdateSource();

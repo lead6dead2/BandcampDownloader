@@ -214,7 +214,7 @@
                 Grid.Column="0"
                 Content="{lex:Loc}"
                 Target="{Binding ElementName=comboBoxComments}" />
-            <ComboBox
+            <!--<ComboBox
                 x:Name="comboBoxComments"
                 Grid.Row="7"
                 Grid.Column="1"
@@ -226,7 +226,19 @@
                 ItemsSource="{Binding Source={local:EnumerationExtension {x:Type local:TagRemoveAction}}}"
                 SelectedValue="{Binding TagComments, UpdateSourceTrigger=Explicit}"
                 SelectedValuePath="Value"
-                TabIndex="9" />
+                TabIndex="9" />-->
+            <lex:EnumComboBox
+                x:Name="comboBoxComments"
+                Grid.Row="7"
+                Grid.Column="1"
+                Width="120"
+                Height="22"
+                HorizontalAlignment="Left"
+                IsEnabled="{Binding ElementName=checkBoxModifyTags, Path=IsChecked}"
+                PrependType="True"
+                SelectedItem="{Binding TagComments, UpdateSourceTrigger=Explicit}"
+                TabIndex="9"
+                Type="{x:Type local:TagRemoveAction}" />
         </Grid>
     </Grid>
 </UserControl>
